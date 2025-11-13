@@ -1,0 +1,71 @@
+body.intro-page {
+    margin: 0;
+    height: 100vh;
+    background: radial-gradient(circle at top, #141414, #000);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .intro-container {
+    text-align: center;
+    animation: fadeIn 1.5s ease-in;
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+  }
+  
+  .profiles {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .profile {
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  
+  .profile img {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    border: 3px solid transparent;
+    transition: border 0.3s ease, transform 0.3s ease;
+  }
+  
+  .profile:hover img {
+    border-color: #e50914;
+    transform: scale(1.1);
+  }
+  
+  .profile p {
+    margin-top: 10px;
+    color: #aaa;
+    font-size: 1rem;
+  }
+  
+  .profile:hover p {
+    color: white;
+  }
+  
+  .profile.clicked {
+    transform: scale(1.2);
+    filter: brightness(1.5);
+    transition: 0.3s;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Esse css foi bem pesquisado também, tive diversas dúvidas */
+  

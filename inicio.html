@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bem-vindo | LineCine</title>
+  <link rel="stylesheet" href="inicio.css">
+  <link rel="icon" type="image/png" href="imgs/GerminaFlix-removebg-preview.png">
+</head>
+<body class="intro-page">
+  <div class="intro-container">
+    <h1 class="title">Quem está assistindo?</h1>
+    
+    <div class="profiles">
+      <div class="profile">
+        <img src="imgs/moranguinhoperfil.jpg" alt="Perfil 1">
+        <p>Moranguinho</p>
+      </div>
+      <div class="profile">
+        <img src="imgs/limãozinhaperfil.jpg" alt="Perfil 2">
+        <p>Gotinha de limão</p>
+      </div>
+      <div class="profile">
+        <img src="imgs/laranjinhaperfil.jpg" alt="Perfil 3">
+        <p>Laranjinha</p>
+      </div>
+      <div class="profile">
+        <img src="imgs/amorinhaperfil.jpg" alt="Perfil 4">
+        <p>Amora linda</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Esse é o clique, ou seja, o que vai levar para a página inicial (tive que pesquisar nessa parte...)
+    document.querySelectorAll('.profile').forEach(profile => {
+      profile.addEventListener('click', () => {
+        profile.classList.add('clicked');
+        setTimeout(() => {
+          window.location.href = 'home.html';
+        }, 700); 
+      });
+    });
+  </script>
+</body>
+</html>

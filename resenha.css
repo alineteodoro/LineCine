@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #141414;
+    color: #fff;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    /* o z index é para controlar a ordem de empilhamento */
+  }
+  
+  .logo {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+    color: #f26a8d;
+  }
+  
+  .logo span {
+    /* estilizando uma parte específica do texto */
+    color: #f49f0a;
+  }
+  
+  nav a {
+    color: #ccc;
+    margin: 0 15px;
+    text-decoration: none;
+    /* para acontecer gradualmente */
+    font-weight: 500;
+  }
+  
+  nav a:hover {
+    color: #fff;
+  }
+  
+  .banner {
+    position: relative;
+    background: url("imgs/operacaocupido.webp") center/cover no-repeat;
+    /* serve para cobrir somente o fundo do início */
+    height: 70vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 80px 60px;
+  }
+  
+  .banner .overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: linear-gradient(to top, rgba(20,20,20,0.9) 10%, rgba(20,20,20,0.4));
+    z-index: 1;
+  }
+  
+  .banner-content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+  }
+  
+  .banner h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3.5rem;
+    color: #fff;
+    margin: 0;
+  }
+  
+  .banner p {
+    font-size: 1.2rem;
+    color: #f5f5f5;
+    margin-top: 10px;
+  }
+  
+  .conteudo {
+    padding: 120px 60px 60px;
+  }
+  
+  .section {
+    margin-bottom: 50px;
+  }
+  
+  .section h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+    color: #f26a8d;
+    border-left: 5px solid #f49f0a;
+    padding-left: 10px;
+  }
+  
+  .section p, .section ul {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ddd;
+    max-width: 900px;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  .btn {
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.3s;
+  }
+  
+  .btn.imdb {
+    background-color: #f49f0a;
+    color: #141414;
+  }
+  
+  .btn.imdb:hover {
+    background-color: #ffb347;
+    transform: scale(1.05);
+  }
+  
+  .btn.back {
+    background-color: #f26a8d;
+    color: #fff;
+  }
+  
+  .btn.back:hover {
+    background-color: #ff7ea5;
+    transform: scale(1.05);
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 30px;
+    color: #aaa;
+    font-size: 0.9rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+  }
+  
